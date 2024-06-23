@@ -52,13 +52,13 @@ const handle = () => {
             >Tanggal</label
           >
           <input
-            class="my-1 sm:my-4 rounded-md sm:rounded-xl text-center p-1 text-sm sm:p-2 sm:text-xl border-slate-500 border-2 border-solid"
+            class="w-full my-1 sm:my-4 rounded-md sm:rounded-xl text-center p-1 text-sm sm:p-2 sm:text-xl border-slate-500 border-2 border-solid"
             type="date"
             id="tgl"
             v-model="dateInput"
           />
           <button
-            class="w-1/2 sm:w-full bg-slate-500 sm:p-2 rounded-md text-sm font-poet text-white mx-auto hover:bg-slate-700 border-solid border-slate-500 border-2"
+            class="w-1/2 bg-slate-500 sm:p-2 rounded-md text-sm font-poet text-white mx-auto hover:bg-slate-700 border-solid border-slate-500 border-2 max-sm:mt-4"
           >
             cek
           </button>
@@ -68,7 +68,11 @@ const handle = () => {
         v-if="kodam != null"
         class="sm:w-1/3 sm:min-w-max rounded-xl bg-slate-500 flex flex-col items-center pb-4"
       >
-        <img :src="kodam.sioImg" alt="sio" />
+        <img
+          class="sm:w-[30vw] aspect-square object-cover"
+          :src="kodam.sioImg"
+          alt="sio"
+        />
         <p
           class="font-poet text-3xl text-white mb-2 border-b-2 border-solid border-white"
         >
@@ -76,7 +80,7 @@ const handle = () => {
           <span class="text-gray-300">({{ kodam.sioInd }})</span>
         </p>
         <p class="text-xl font-bold text-white">Tanggal: {{ dateInput }}</p>
-        <p class="text-xl font-bold text-white">
+        <p class="text-xl font-bold text-white text-center">
           {{ kodam.hari }}
           <span class="text-gray-300">({{ kodam.neptuH }})</span> +
           {{ kodam.pasar }}

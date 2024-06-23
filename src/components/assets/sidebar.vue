@@ -62,7 +62,7 @@ const navigation = [
             <a href="#" class="sm:hidden flex items-center ps-2.5">
               <img src="/icon_app.png" class="h-6 me-3" alt="Logo" />
               <span
-                class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+                class="self-center text-xl whitespace-nowrap dark:text-white font-poet"
                 >Weton</span
               >
             </a>
@@ -79,7 +79,7 @@ const navigation = [
         <a href="#" class="flex items-center ps-2.5 mb-5">
           <img src="/icon_app.png" class="h-6 me-3 sm:h-7" alt="Logo" />
           <span
-            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+            class="self-center text-xl whitespace-nowrap dark:text-white font-poet"
             >Weton</span
           >
         </a>

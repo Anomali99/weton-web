@@ -36,7 +36,7 @@ const cekKodam = () => {
               v-model="user"
             />
             <button
-              class="w-1/2 sm:w-full bg-slate-500 sm:p-2 rounded-md text-sm font-poet text-white mx-auto hover:bg-slate-700 border-solid border-slate-500 border-2"
+              class="w-1/2 bg-slate-500 sm:p-2 rounded-md text-sm font-poet text-white mx-auto hover:bg-slate-700 border-solid border-slate-500 border-2"
             >
               cek
             </button>

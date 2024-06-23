@@ -57,7 +57,7 @@ const handle = () => {
 
 <template>
   <div class="w-full h-full flex flex-col items-center">
-    <h1 class="font-poet text-2xl sm:text-7xl">Mencari Sio</h1>
+    <h1 class="font-poet text-2xl sm:text-7xl">Kecocokan Jodoh</h1>
     <div
       class="mt-4 sm:mt-8 flex max-sm:flex-col sm:flex-row max-sm:gap-y-4 sm:gap-x-4 w-full"
     >
@@ -69,22 +69,24 @@ const handle = () => {
             >Tanggal 1</label
           >
           <input
-            class="my-1 sm:my-4 rounded-md sm:rounded-xl text-center p-1 text-sm sm:p-2 sm:text-xl border-slate-500 border-2 border-solid"
+            class="w-full my-1 sm:my-4 rounded-md sm:rounded-xl text-center p-1 text-sm sm:p-2 sm:text-xl border-slate-500 border-2 border-solid"
             type="date"
             id="tgl1"
             v-model="dateInput1"
           />
-          <label for="tgl2" class="font-poet text-xl sm:text-3xl text-white"
+          <label
+            for="tgl2"
+            class="font-poet text-xl sm:text-3xl text-white mt-4"
             >Tanggal 2</label
           >
           <input
-            class="my-1 sm:my-4 rounded-md sm:rounded-xl text-center p-1 text-sm sm:p-2 sm:text-xl border-slate-500 border-2 border-solid"
+            class="w-full my-1 sm:my-4 rounded-md sm:rounded-xl text-center p-1 text-sm sm:p-2 sm:text-xl border-slate-500 border-2 border-solid"
             type="date"
             id="tgl2"
             v-model="dateInput2"
           />
           <button
-            class="w-1/2 sm:w-full bg-slate-500 sm:p-2 rounded-md text-sm font-poet text-white mx-auto hover:bg-slate-700 border-solid border-slate-500 border-2"
+            class="w-1/2 bg-slate-500 sm:p-2 rounded-md text-sm font-poet text-white mx-auto hover:bg-slate-700 border-solid border-slate-500 border-2 mt-4"
           >
             cek
           </button>
@@ -107,7 +109,7 @@ const handle = () => {
         <p class="text-xl font-bold text-white">
           {{ dateInput1 }} <span class="text-gray-300">&</span> {{ dateInput2 }}
         </p>
-        <p class="text-xl font-bold text-white">
+        <p class="text-xl font-bold text-white text-center">
           ({{ hasil.hari1 }}
           <span class="text-gray-300">({{ hasil.neptuH1 }})</span> +
           {{ hasil.pasar1 }}

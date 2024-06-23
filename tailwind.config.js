@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-import poetsenone from "./src/assets/font";
 
 export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
